@@ -1,0 +1,498 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+html,
+body { height: 100% }
+body {
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Big Shoulders Display', cursive;*/
+}
+a:hover { text-decoration: none;color:#167ac6; }
+a{color:white;}
+p {
+	font-size: 14px;
+	color: #969696;
+}
+
+
+
+/*common css*/
+.section-padding {
+	padding: 50px 0px;
+}
+.common-title {
+	padding-bottom: 100px;
+	padding-top: 50px;
+	text-align: center;
+}
+.common-title p {
+	padding-top: 80px;
+}
+
+.common-title h4 {
+	position: relative;
+	float: left;
+	width: 100%;
+	margin: 0px;
+	padding-bottom: 15px;
+	text-transform: capitalize;
+	text-align: center;
+
+}
+.common-title h4::before {
+	position: absolute;
+	content: "";
+	top: 100%;
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	width: 80px;
+	height: 8px;
+	background-color: #167ac6;
+	border-radius: 100px;
+}
+
+.common-title h4::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    width: 30px;
+    height: 0px;
+    border-bottom: 6px double #fff;
+    border-radius: 100px;
+}
+
+/*Header css*/
+.header_top_area {
+    width: 100%;
+    background-color: #167ac6;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 15px 0px;
+}
+
+.header_top_area p {
+	float: left;
+	width: 70%;
+	text-align: left;
+	margin: 0;
+	color: white;
+}
+.menu-button {
+	float: right;
+	width: 30%;
+	text-align: right;
+}
+.button a {
+	padding: 7px 30px;
+	color: #167ac6;
+	text-decoration: none;
+	background-color: #fff;
+	margin: 0px;
+	border: 2px solid transparent;
+	border-radius: 3px;
+	border:2px solid #167ac6;
+	transition: .3s;
+}
+.button a:hover{
+	text-decoration:none;
+	background-color:#167ac6;
+	border:2px solid #fff;
+	color:#fff;
+}
+
+.menu-area {
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.menu-area .menu{
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.menu-area ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin:0; 
+}
+.menu-area ul a {
+    text-decoration: none;
+    padding: 0px 20px;
+    color: black;
+    text-transform: capitalize;
+}
+.menu-area ul a:hover{
+	color: #167ac6;
+}
+.Phone-number p{
+	color: black;
+}
+.menu-area .Phone-number{
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu-area .Phone-number .fa.fa-phone {
+	margin-right: 10px;
+}
+.menu-area .Phone-number p{
+	margin: 0;
+}
+
+
+.banner-area{
+	background-image: url(assets/img/brdcrm_bg.jpg);
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	color: white;
+	text-transform: capitalize;
+}
+.banner-area::before{
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color:black;
+	opacity: .7; 
+}
+.banner-area h1{
+	text-transform: uppercase;
+	font-size: 80px;
+	
+    font-family: 'Big Shoulders Display', cursive;
+}
+.banner-area h4{
+	font-size: 40px;
+}
+.banner-content{
+	margin: auto;
+	text-align: center;
+	z-index: 1;
+}
+.banner-area .button {
+	margin-top: 50px;
+}
+
+/*expertise css*/
+.expertise-area{
+	position: relative;
+}
+
+.expertise-slider{
+	text-align: center;
+}
+.expertise-slider  .expertise-image {
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	position: relative;
+	overflow: hidden;
+	margin: auto;
+}
+.expertise-image::before{
+	position: absolute;
+	content: '';
+	height: 0%;
+	width: 0%;
+	top: 50%;
+	left: 50%;
+	background-color:#167ac6;
+	opacity: .7;
+	border-radius:50%;
+	transition: .4s;
+}
+.expertise-slide:hover .expertise-image::before{
+	height: 100%;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+}
+.expertise-slider h6 {
+	margin-top: 30px;
+	font-size: 25px;
+	color: #3e3e3e;
+}
+.expertise-slider a{
+	color: #3e3e3e;
+	position: relative;
+	transition:.3s;
+	left: 0px;
+}
+.expertise-slider a:hover{
+	left: 10px;
+	color: #167ac6;
+}
+
+
+
+.expertise-slider .owl-nav {
+	position: absolute;
+	width: 100%;
+	font-size: 25px;
+	font-weight: bold;
+	top: -150px;
+}
+
+.expertise-slider .owl-nav .owl-prev {
+    display: block;
+    float: left;
+}
+.expertise-slider .owl-nav .owl-next {
+    display: block;
+    float: right;
+}
+
+
+.expertise-slide {
+    padding: 0px 15px;
+}
+
+
+
+
+/*sucess area*/
+
+.sucess-area{
+	background-color: #edf2f6;
+}
+.sucess-content {
+	text-align: center;
+	background: #fff;
+	padding: 40px;
+}
+.sucess-number {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #167ac6;
+    font-size: 30px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    border: 2px solid #167ac6;
+    margin-bottom: 40px;
+    transition: .3s;
+}
+.sucess-content .col-md-4:hover .sucess-number {
+	background: transparent;
+	color: #167ac6;
+	transition: .3s;
+}
+
+
+
+
+
+/*about css*/
+.about-me-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-me-content h4, {
+    text-transform: uppercase;
+}
+
+/*vidio area*/
+.vidio-area{
+	background-image: url(assets/img/section_3_bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+	padding: 100px 0px;
+}
+.vidio-area:before {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	content: '';
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.vidio-area h4,.vidio-area p {
+	color: white;
+	
+}
+.vidio-area h4{
+	text-transform: uppercase;	
+}
+
+
+.form-control:focus {
+	box-shadow: none;
+}
+
+form {
+	width: 100%;
+}
+.newsletter-area{
+	padding: 100px 0px;
+	background-image: url(assets/img/Single_course_bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.newsletter-area:after{
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color:black;
+	opacity: .7;
+}
+
+.btn-primary {
+	margin: 30px 0px;
+	float: right;
+	background: white;
+	border: 2px solid #167ac6; 
+	color: #167ac6;
+}
+.btn-primary:hover {
+	background: #167ac6;
+	border: 2px solid #fff; 
+	color: #fff; 
+}
+.newsletter-area  .btn-primary {
+	margin: 0px;
+}
+
+
+
+.newsletter-area h4 {
+	font-size: 18px;
+}
+
+.newsletter-area-content {
+	z-index: 1;
+	position: relative;
+	color: white;
+}
+
+
+.footer-area p, {
+  font-size: 14px;
+  margin-bottom:10px;
+  position: relative;
+}
+.footer-area h3 {
+  font-size: 25px;
+  color:#969696;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.footer-area h3:before {
+	position: absolute;
+    content: "";
+    top: 100%;
+    left: 0%;
+    width: 70px;
+    height: 2px;
+    background-color: #CACACA;
+    margin: 8px auto;
+}
+.footer-area {
+  background: #202020;
+  padding: 50px 0px;
+}
+.footer-logo{
+	padding-bottom: 45px;
+
+}
+
+.footer-social-icons li a{
+	color: white;
+	padding: 0px 10px;
+
+}
+.footer-social-icons li a:hover{
+	color: #167ac6;
+}
+.footer-social-icons ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+.mail-account p:before,.adds:before,.phone-number:before {
+    position: absolute;
+    content: '\f003 ';
+    top: auto;
+    left: -30px;
+    font-family: 'FontAwesome';
+    color: white;
+}
+.adds:before{
+	content: '\f2bc';
+}
+.phone-number:before{
+	content: ' \f095 ';
+}
+.mail-account, .adds,.phone-number{
+	margin-left: 30px;
+	position: relative;
+}
+
+.white-content {
+    color: white;
+    font-weight: 500;
+}
+
+.footer-bottom{
+	text-align: center;
+	color: white;
+	background: #101010;
+}
+.footer-bottom p{
+	color: white;
+}
+.footer-menu ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+.footer-menu a{
+	padding: 0px 10px;
+}

@@ -1,0 +1,74 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+.section-padding {
+    padding: 60px 0px;
+}
+.menu-area ul a {
+    padding: 0px 10px;
+    font-size: 14px;
+}
+.banner-area h1 {
+    font-size: 50px;
+}
+.btn-primary {
+    float: left;
+    
+}
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+.menu-area .menu {
+	display: none;
+}
+.header-logo,.menu-area .Phone-number p {
+	text-align: center;
+}
+.banner-area{
+	height: 300px;
+}
+.banner-area h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.banner-area h4 {
+	font-size: 20px;
+}
+ .vidio{
+	margin-top: 50px;
+} 
+.btn-primary {
+	float: left; 
+}
+.newsletter-area {
+    padding: 50px 0px;
+}
+.newsletter-area .btn-primary {
+	margin: 20px 0px;
+}
+.sucess-number{margin-bottom: 20px;}
+.vidio-area {
+	padding: 30px 0px;
+}
+.common-title {
+	padding-bottom: 50px;
+	padding-top: 25px;
+}
+.newsletter-area h4 {
+	font-size: 14px;
+}
+.footer-social-icons {
+	margin-bottom: 30px;
+}
+.footer-area h3 {
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+.footer-logo {
+	padding-bottom: 25px;
+}
+}
